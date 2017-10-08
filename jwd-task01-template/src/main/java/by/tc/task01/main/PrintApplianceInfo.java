@@ -7,9 +7,9 @@ public class PrintApplianceInfo {
 	
 	public static void print(Appliance appliance) {
 		if (appliance == null)
-			System.out.println("null");
+			System.out.println("not found");
 		else{
-			System.out.println(appliance.toString());
+			System.out.println("found "+appliance.toString());
 		}
 	}
 	
