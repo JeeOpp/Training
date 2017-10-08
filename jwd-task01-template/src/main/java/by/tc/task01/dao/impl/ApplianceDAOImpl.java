@@ -13,13 +13,11 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(new File(path)));
 
 		String generic = criteria.getGeneric();
-		Appliance appliance = Appliance.getAppliance(generic);
-
 		String applianceLine;
 		while ((applianceLine = bufferedReader.readLine())!=null){
 			if (generic.equals(applianceLine.split(" ")[0])){
 				if (criteria.isContained(applianceLine)){
-					return appliance;
+					return Appliance.getAppliance(generic);
 				}
 			}
 		}
