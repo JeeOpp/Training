@@ -50,6 +50,32 @@ public class TabletPC extends Appliance{
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TabletPC)) return false;
+        if (!super.equals(o)) return false;
+
+        TabletPC tabletPC = (TabletPC) o;
+
+        if (getBatteryCapacity() != tabletPC.getBatteryCapacity()) return false;
+        if (getDisplayInches() != tabletPC.getDisplayInches()) return false;
+        if (getMemoryRom() != tabletPC.getMemoryRom()) return false;
+        if (getFlashMemoryCapacity() != tabletPC.getFlashMemoryCapacity()) return false;
+        return getColor().equals(tabletPC.getColor());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        result = 31 * result + getBatteryCapacity();
+        result = 31 * result + getDisplayInches();
+        result = 31 * result + getMemoryRom();
+        result = 31 * result + getFlashMemoryCapacity();
+        result = 31 * result + getColor().hashCode();
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "TabletPC";
     }

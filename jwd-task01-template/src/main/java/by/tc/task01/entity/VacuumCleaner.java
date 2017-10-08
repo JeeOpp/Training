@@ -57,4 +57,40 @@ public class VacuumCleaner extends Appliance{
     public void setCleaningWidth(double cleaningWidth) {
         this.cleaningWidth = cleaningWidth;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof VacuumCleaner)) return false;
+        if (!super.equals(o)) return false;
+
+        VacuumCleaner that = (VacuumCleaner) o;
+
+        if (getPowerConsumption() != that.getPowerConsumption()) return false;
+        if (Double.compare(that.getMotorSpeedRegulation(), getMotorSpeedRegulation()) != 0) return false;
+        if (Double.compare(that.getCleaningWidth(), getCleaningWidth()) != 0) return false;
+        if (!getFilterType().equals(that.getFilterType())) return false;
+        if (!getBagType().equals(that.getBagType())) return false;
+        return getWandType().equals(that.getWandType());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        long temp;
+        result = 31 * result + getPowerConsumption();
+        result = 31 * result + getFilterType().hashCode();
+        result = 31 * result + getBagType().hashCode();
+        result = 31 * result + getWandType().hashCode();
+        temp = Double.doubleToLongBits(getMotorSpeedRegulation());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(getCleaningWidth());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "VacuumCleaner";
+    }
 }

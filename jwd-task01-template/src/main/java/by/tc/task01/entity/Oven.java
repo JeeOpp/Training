@@ -59,6 +59,38 @@ public class Oven extends Appliance{
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Oven)) return false;
+        if (!super.equals(o)) return false;
+
+        Oven oven = (Oven) o;
+
+        if (getPowerConsumption() != oven.getPowerConsumption()) return false;
+        if (Double.compare(oven.getWeight(), getWeight()) != 0) return false;
+        if (getCapacity() != oven.getCapacity()) return false;
+        if (getDepth() != oven.getDepth()) return false;
+        if (Double.compare(oven.getHeight(), getHeight()) != 0) return false;
+        return Double.compare(oven.getWidth(), getWidth()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        long temp;
+        result = 31 * result + getPowerConsumption();
+        temp = Double.doubleToLongBits(getWeight());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + getCapacity();
+        result = 31 * result + getDepth();
+        temp = Double.doubleToLongBits(getHeight());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(getWidth());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
     public String toString() {
         return "Oven";
     }

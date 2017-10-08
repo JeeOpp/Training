@@ -58,4 +58,41 @@ public class Refrigerator extends Appliance{
         this.width = width;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Refrigerator)) return false;
+        if (!super.equals(o)) return false;
+
+        Refrigerator that = (Refrigerator) o;
+
+        if (getPowerConsumption() != that.getPowerConsumption()) return false;
+        if (Double.compare(that.getWeight(), getWeight()) != 0) return false;
+        if (getFreezerCapacity() != that.getFreezerCapacity()) return false;
+        if (Double.compare(that.getOverallCapacity(), getOverallCapacity()) != 0) return false;
+        if (Double.compare(that.getHeight(), getHeight()) != 0) return false;
+        return Double.compare(that.getWidth(), getWidth()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        long temp;
+        result = 31 * result + getPowerConsumption();
+        temp = Double.doubleToLongBits(getWeight());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + getFreezerCapacity();
+        temp = Double.doubleToLongBits(getOverallCapacity());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(getHeight());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(getWidth());
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Refrigerator";
+    }
 }
