@@ -6,8 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03d221b7-9eed-470d-9a74-22c7a44e8209" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Appliance.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Appliance.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Laptop.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Laptop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Oven.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Oven.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Refrigerator.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Refrigerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Speakers.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Speakers.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/TabletPC.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/TabletPC.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/VacuumCleaner.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/VacuumCleaner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/main/PrintApplianceInfo.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/main/PrintApplianceInfo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,8 +155,8 @@
       <file leaf-file-name="PrintApplianceInfo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="330">
+              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -939,7 +946,7 @@
       <workItem from="1507461423069" duration="10000" />
       <workItem from="1507461459101" duration="139000" />
       <workItem from="1507461874493" duration="277000" />
-      <workItem from="1507467243313" duration="1800000" />
+      <workItem from="1507467243313" duration="1932000" />
     </task>
     <task id="LOCAL-00001" summary="Equals and HashCodes">
       <created>1507467891036</created>
@@ -948,15 +955,22 @@
       <option name="project" value="LOCAL" />
       <updated>1507467891036</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="printAppliance">
+      <created>1507470138522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507470138522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44689000" />
+    <option name="totallyTimeSpent" value="44821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -965,10 +979,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29105324" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08959228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2819932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29105324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29105324" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1016,7 +1030,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Equals and HashCodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Equals and HashCodes" />
+    <MESSAGE value="printAppliance" />
+    <option name="LAST_COMMIT_MESSAGE" value="printAppliance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1476,8 +1491,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/main/PrintApplianceInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="330">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding />
         </state>
       </provider>
