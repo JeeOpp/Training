@@ -9,7 +9,7 @@ import static java.util.Arrays.asList;
 
 public class Validator {
 	
-	public static <E> boolean criteriaValidator(Criteria<E> criteria) throws NumberFormatException {
+	public static <E> boolean criteriaValidator(Criteria<E> criteria) {
 		if (criteria.getHashMap().isEmpty()) {
 			return false;
 		}
@@ -17,28 +17,32 @@ public class Validator {
 		List<String>doubleCriteria = new ArrayList<String>(asList("BATTERY_CAPACITY","CPU","WEIGHT","HEIGHT","WIDTH","MOTOR_SPEED_REGULATION","CLEANING_WIDTH"));
 		List<String>stringCriteria = new ArrayList<String>(asList("FREQUENCY_RANGE", "COLOR","FILTER_TYPE","BAG_TYPE","WAND_TYPE"));
 
-		for (Map.Entry<E,Object> pair : criteria.getHashMap().entrySet()){
-			String stringKey = pair.getKey().toString();
-			if (intCriteria.contains(stringKey)){
-				int intValue = Integer.parseInt(pair.getValue().toString());
-				if (intValue<0) {
-					return false;
+		try {
+			for (Map.Entry<E, Object> pair : criteria.getHashMap().entrySet()) {
+				String stringKey = pair.getKey().toString();
+				if (intCriteria.contains(stringKey)) {
+					int intValue = Integer.parseInt(pair.getValue().toString());
+					if (intValue < 0) {
+						return false;
+					}
+				}
+				if (doubleCriteria.contains(stringKey)) {
+					double doubleValue = Double.parseDouble(pair.getValue().toString());
+					if (doubleValue < 0) {
+						return false;
+					}
+				}
+				if (stringCriteria.contains(stringKey)) {
+					String stringValue = pair.getValue().toString();
+					if (stringValue.length() > 20) {
+						return false;
+					}
 				}
 			}
-			if(doubleCriteria.contains(stringKey)){
-				double doubleValue = Double.parseDouble(pair.getValue().toString());
-				if (doubleValue<0){
-					return false;
-				}
-			}
-			if(stringCriteria.contains(stringKey)){
-				String stringValue = pair.getValue().toString();
-				if (stringValue.length()>20) {
-					return false;
-				}
-			}
+			return true;
+		}catch (NumberFormatException ex){
+			return false;
 		}
-		return true;
 	}
 
 }

@@ -91,6 +91,13 @@ public class Laptop extends Appliance{
 
     @Override
     public String toString() {
-        return "Laptop";
+        return "Laptop{" +
+                "batteryCapacity=" + batteryCapacity +
+                ", os='" + os + '\'' +
+                ", memoryRom=" + memoryRom +
+                ", systemMemory=" + systemMemory +
+                ", cpu=" + cpu +
+                ", displayInches=" + displayInches +
+                '}';
     }
 }

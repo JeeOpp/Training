@@ -27,14 +27,14 @@ public class Main {
 
 			//////////////////////////////////////////////////////////////////
 
-			criteriaOven = new Criteria<Oven>();
-			criteriaOven.setApplianceType("Oven");
-			criteriaOven.add(Oven.HEIGHT, 4);
-			criteriaOven.add(Oven.DEPTH, 60);
+			Criteria<Laptop> criteriaLaptop = new Criteria<Laptop>();
+			criteriaLaptop.setApplianceType("Laptop");
+			criteriaLaptop.add(Laptop.BATTERY_CAPACITY,1.5);
+			criteriaLaptop.add(Laptop.SYSTEM_MEMORY,1000);
 
-			appliance = service.find(criteriaOven);
-
+			appliance = service.find(criteriaLaptop);
 			PrintApplianceInfo.print(appliance);
+
 			//////////////////////////////////////////////////////////////////
 
 			Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
