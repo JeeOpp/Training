@@ -17,6 +17,7 @@ public class Main {
 
 			//////////////////////////////////////////////////////////////////
 			Criteria<Oven> criteriaOven = new Criteria<Oven>();
+			criteriaOven.setApplianceType("Oven");
 			criteriaOven.add(Oven.CAPACITY, 33);
 			criteriaOven.add(Oven.POWER_CONSUMPTION, 2000);
 			criteriaOven.add(Oven.WIDTH, 70);
@@ -27,6 +28,7 @@ public class Main {
 			//////////////////////////////////////////////////////////////////
 
 			criteriaOven = new Criteria<Oven>();
+			criteriaOven.setApplianceType("Oven");
 			criteriaOven.add(Oven.HEIGHT, 4);
 			criteriaOven.add(Oven.DEPTH, 60);
 
@@ -36,6 +38,7 @@ public class Main {
 			//////////////////////////////////////////////////////////////////
 
 			Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
+			criteriaTabletPC.setApplianceType("TabletPC");
 			criteriaTabletPC.add(TabletPC.COLOR, "blue");
 			criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 14);
 			criteriaTabletPC.add(TabletPC.MEMORY_ROM, 8000);

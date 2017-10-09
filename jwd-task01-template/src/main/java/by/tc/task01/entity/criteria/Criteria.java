@@ -6,9 +6,19 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Criteria<E> {
+	private String applianceType;
+
 	private Map<E, Object> criteria = new HashMap<E, Object>();
 
 	public Criteria(){}
+
+	public String getApplianceType(){
+		return applianceType;
+	}
+
+	public void setApplianceType(String applianceType){
+		this.applianceType=applianceType;
+	}
 
 	public void add(E searchCriteria, Object value) {
 		criteria.put(searchCriteria, value);
@@ -16,10 +26,6 @@ public class Criteria<E> {
 
 	public Map<E, Object> getHashMap(){
 		return criteria;
-	}
-
-	public String getGeneric(){
-		return criteria.entrySet().iterator().next().getKey().getClass().getSimpleName();
 	}
 
 	public boolean isContained(String applianceLine){
