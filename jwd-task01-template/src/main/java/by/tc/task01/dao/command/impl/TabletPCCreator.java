@@ -11,7 +11,12 @@ import java.util.Map;
  */
 public class TabletPCCreator implements Command {
     public Appliance execute(Map<String, Object> applianceLine) {
-
-        return new TabletPC();
+        TabletPC tabletPC = new TabletPC();
+        tabletPC.setDisplayInches(Integer.parseInt((String)applianceLine.get("DISPLAY_INCHES")));
+        tabletPC.setBatteryCapacity(Integer.parseInt((String)applianceLine.get("BATTERY_CAPACITY")));
+        tabletPC.setColor((String)applianceLine.get("COLOR"));
+        tabletPC.setFlashMemoryCapacity(Integer.parseInt((String)applianceLine.get("FLASH_MEMORY_CAPACITY")));
+        tabletPC.setMemoryRom(Integer.parseInt((String)applianceLine.get("MEMORY_ROM")));
+        return tabletPC;
     }
 }

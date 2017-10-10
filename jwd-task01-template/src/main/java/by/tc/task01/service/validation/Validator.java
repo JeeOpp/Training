@@ -13,7 +13,7 @@ public class Validator {
 		if (criteria.getHashMap().isEmpty()) {
 			return false;
 		}
-		List<String>intCriteria = new ArrayList<String>(asList("MEMORY_ROM", "SYSTEM_MEMORY","DISPLAY_INCHS","POWER_CONSUMPTION","CAPACITY","DEPTH","FREEZER_CAPACITY","NUMBERS_OF_SPEAKERS", "CORD_LENGTH","FLASH_MEMORY_CAPACITY"));
+		List<String>intCriteria = new ArrayList<String>(asList("MEMORY_ROM", "SYSTEM_MEMORY","DISPLAY_INCHES","POWER_CONSUMPTION","CAPACITY","DEPTH","FREEZER_CAPACITY","NUMBERS_OF_SPEAKERS", "CORD_LENGTH","FLASH_MEMORY_CAPACITY"));
 		List<String>doubleCriteria = new ArrayList<String>(asList("BATTERY_CAPACITY","CPU","WEIGHT","HEIGHT","WIDTH","MOTOR_SPEED_REGULATION","CLEANING_WIDTH"));
 		List<String>stringCriteria = new ArrayList<String>(asList("FREQUENCY_RANGE", "COLOR","FILTER_TYPE","BAG_TYPE","WAND_TYPE"));
 

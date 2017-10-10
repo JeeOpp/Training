@@ -11,6 +11,13 @@ import java.util.Map;
  */
 public class OvenCreator implements Command {
     public Appliance execute(Map<String, Object> applianceLine) {
-        return new Oven();
+        Oven oven = new Oven();
+        oven.setCapacity(Integer.parseInt((String)applianceLine.get("CAPACITY")));
+        oven.setDepth(Integer.parseInt((String)applianceLine.get("DEPTH")));
+        oven.setHeight(Double.parseDouble((String)applianceLine.get("HEIGHT")));
+        oven.setPowerConsumption(Integer.parseInt((String)applianceLine.get("POWER_CONSUMPTION")));
+        oven.setWeight(Double.parseDouble((String)applianceLine.get("WEIGHT")));
+        oven.setWidth(Double.parseDouble((String)applianceLine.get("WIDTH")));
+        return oven;
     }
 }

@@ -11,6 +11,13 @@ import java.util.Map;
  */
 public class VacuumCleanerCreator implements Command {
     public Appliance execute(Map<String, Object> applianceLine) {
-        return new VacuumCleaner();
+        VacuumCleaner vacuumCleaner = new VacuumCleaner();
+        vacuumCleaner.setPowerConsumption(Integer.parseInt((String)applianceLine.get("POWER_CONSUMPTION")));
+        vacuumCleaner.setBagType((String)applianceLine.get("BAG_TYPE"));
+        vacuumCleaner.setCleaningWidth(Double.parseDouble((String)applianceLine.get("WIDTH")));
+        vacuumCleaner.setFilterType((String)applianceLine.get("FILTER_TYPE"));
+        vacuumCleaner.setMotorSpeedRegulation(Double.parseDouble((String)applianceLine.get("MOTOR_SPEED_REGULATION")));
+        vacuumCleaner.setWandType((String)applianceLine.get("WAND_TYPE"));
+        return vacuumCleaner;
     }
 }

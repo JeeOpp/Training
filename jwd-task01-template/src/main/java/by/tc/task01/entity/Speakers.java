@@ -66,6 +66,11 @@ public class Speakers extends Appliance{
 
     @Override
     public String toString() {
-        return "Speakers";
+        return "Speakers{" +
+                "powerConsumption=" + powerConsumption +
+                ", numberOfSpeakers=" + numberOfSpeakers +
+                ", frequencyRange='" + frequencyRange + '\'' +
+                ", cordLength=" + cordLength +
+                '}';
     }
 }
