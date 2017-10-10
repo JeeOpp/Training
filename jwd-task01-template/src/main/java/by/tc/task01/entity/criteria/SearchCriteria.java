@@ -25,7 +25,5 @@ public final class SearchCriteria {
 	public static enum Speakers{
 		POWER_CONSUMPTION, NUMBER_OF_SPEAKERS, FREQUENCY_RANGE, CORD_LENGTH
 	}
-	
-	private SearchCriteria() {}
 }
 
