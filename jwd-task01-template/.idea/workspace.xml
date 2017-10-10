@@ -5,26 +5,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03d221b7-9eed-470d-9a74-22c7a44e8209" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Laptop.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Laptop.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Oven.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Oven.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Refrigerator.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Refrigerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Speakers.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/Speakers.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/TabletPC.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/TabletPC.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/VacuumCleaner.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/entity/VacuumCleaner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" afterPath="$PROJECT_DIR$/target/classes/by/tc/task01/service/validation/Validator.class" />
+    <list default="true" id="03d221b7-9eed-470d-9a74-22c7a44e8209" name="Default" comment="creators">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/OvenCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/OvenCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/RefrigeratorCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/SpeakersCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/SpeakersCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/TabletPCCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/TabletPCCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerCreator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/VacuumCleanerCreator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Oven.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Oven.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Refrigerator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Refrigerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/Speakers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/TabletPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/entity/VacuumCleaner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" afterPath="$PROJECT_DIR$/src/main/java/by/tc/task01/service/validation/Validator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,8 +72,8 @@
       <file leaf-file-name="SpeakersCreator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/SpeakersCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            <state relative-caret-position="462">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1028,7 +1010,7 @@
       <workItem from="1507467243313" duration="2031000" />
       <workItem from="1507487087589" duration="2940000" />
       <workItem from="1507563291942" duration="18512000" />
-      <workItem from="1507650235087" duration="1675000" />
+      <workItem from="1507650235087" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="Equals and HashCodes">
       <created>1507467891036</created>
@@ -1072,15 +1054,22 @@
       <option name="project" value="LOCAL" />
       <updated>1507584732423</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="creators">
+      <created>1507651952423</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1507651952423</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68047000" />
+    <option name="totallyTimeSpent" value="68347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1080,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29105324" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08959228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2819932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19139297" sideWeight="0.49785408" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1143,7 +1132,8 @@
     <MESSAGE value="printAppliance" />
     <MESSAGE value="find" />
     <MESSAGE value="Command Pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Command Pattern" />
+    <MESSAGE value="creators" />
+    <option name="LAST_COMMIT_MESSAGE" value="creators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1622,8 +1612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/tc/task01/dao/command/impl/SpeakersCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
