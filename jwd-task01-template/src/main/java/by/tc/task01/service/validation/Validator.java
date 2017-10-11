@@ -41,7 +41,10 @@ public class Validator {
 				}
 			}
 			return true;
-		}catch (NumberFormatException ex){
+		}catch (NullPointerException ex){
+			return false;
+		}
+		catch (NumberFormatException ex){
 			return false;
 		}
 	}
