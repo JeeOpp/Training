@@ -36,6 +36,9 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 		}
 		return null;
 	}
+
+
+
 	private Map<String,Object> parseLine(String applianceLine){
 	    Map<String,Object> parsedLine = new HashMap<String, Object>();
         Pattern pattern = Pattern.compile("\\s\\S+[=]\\S+[,|;]");
